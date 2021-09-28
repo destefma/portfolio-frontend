@@ -1,0 +1,194 @@
+    html {
+        scroll-behavior: smooth !important;
+    }
+
+    .border-radius{
+        border-radius: 20px;
+   }
+
+   .bg-gray{
+        background-color: rgb(189, 189, 189);;
+    }
+
+    .bg-lightgray {
+        background-color: #f8f9fa;
+    }
+
+    .bg-lightblue{
+        background: rgba(0,176,255);
+    }
+
+    .bg-darkblue{
+       background-color: rgba(44,62,88);
+    }
+
+    .bg-gradient {
+        background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(44,62,88,0.80) 62%, rgba(248,249,250,0.80) 100%);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size:cover;  
+
+        min-height: 100vh;
+    }
+
+    .btn-decoration-none {
+        border : none;
+        background:  none;
+        padding:  0;
+    }
+
+    .btn-outline-blue{
+        background-color: none;
+        color: white;
+        width: 200px;
+        border: 2px solid rgba(0,176,255,0.88);
+    }
+
+    .btn-blue{
+        background-color: rgba(0,176,255,0.88);
+        width: 200px;
+        color: white;
+    }
+
+    .btn-blue:active {
+        background-color: rgba(0,176,255,0.88);
+        color: white;
+    }
+
+    .btn-blue:disabled {
+        background-color: rgb(189, 189, 189);
+        color: gray;
+    }
+
+    .btn-blue:hover{
+        color:white;
+    }
+
+    .btn-disabled{
+        background-color: rgb(189, 189, 189);
+        color: gray;
+    }
+
+    .font-family-oxanium{
+        font-family: 'Oxanium', cursive;
+    }
+
+    .font-family-nunito{
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    .font-weight-bold {
+        font-weight: bold;    
+    }
+
+    .footer {
+        padding-top: 300px;
+        height: 600px;
+    }
+
+    header.masterheader {
+        background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(44,62,88,0.80) 62%, rgba(248,249,250,0.80) 100%),url(../img/dev_setup_main.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size:cover;  
+
+        min-height: 100vh;
+    }
+
+    .img-responsive {
+        width: auto;
+        max-width: 300px;
+        height: auto;
+        max-height: 300px;
+    }
+
+   .img-icon{
+       width:  50px;
+       height: 50px;
+   }
+
+   .img-sm-icon{
+        width: 50px;
+        height: 50px;
+    }
+
+   .img-icon-avatar{
+        width: 35px;
+        height: 35px;
+        background-size: cover;
+        background-position: top center;
+        border-radius: 50%;
+   }
+
+   .img-icon-lg-avatar{
+        width: 250px;
+        height: 250px;
+        background-size: cover;
+        background-position: top center;
+        border-radius: 10%;
+    }
+
+   .img-lg-icon{
+        width: 100px;
+        height: 100px;
+        max-height: 150px;
+        max-width: 150px;
+    }
+    
+
+    .img-lg{
+        width: 300px;
+        height: 300px;
+        max-height: 300px;
+        max-width: 300px;
+    }
+
+   .card-icon {
+        max-width: 150px;
+        max-height: 150px;
+   }
+
+   .section-aboutme{
+       padding-bottom: 450px;
+   }
+
+   .section-contact {
+        position: absolute;
+        z-index: 2;
+        margin-top:-300px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 75%;
+        height: 500px;
+        border: 2px solid gray;
+        border-radius: 20px;
+   }
+
+   .text-color-lightblue{
+        color: rgba(0,176,255);
+   }
+
+  @media only screen and (max-width: 983px) {
+
+    #navbar {
+        display: none;
+    }
+    #canvarNavbar{
+        display: block;
+    }
+  }
+
+  @media only screen and (min-width: 983px) {
+
+    #navbar{
+        display: block;
+    }
+    #canvarNavbar{
+        display: none;
+    }
+  } 
+

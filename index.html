@@ -1,0 +1,460 @@
+<!-- 
+//////////////////////////////////////////////////////
+
+Portfolio Freelance Website
+by DeStefani
+
+//////////////////////////////////////////////////////
+ -->
+<!DOCTYPE html>
+    <head>
+
+        <meta charset="utf-8">
+        <title>Manuel DeStefani - Freelancer</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Freelancer Portfolio - Manuel DeStefani" />
+        <meta name="keywords" content="dev, development, freelancer, android, blog, portfolio, bootstrap, html5, css3, mobile first, responsive" />
+        <meta name="author" content="Manuel De Stefani" />
+    
+          <!-- Facebook and Instagram integration -->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+        <meta name="instagram:title" content="" />
+        <meta name="instagram:image" content="" />
+        <meta name="instagram:url" content="" />
+        <meta name="instagram:card" content="" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/customstyle.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Oxanium:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;900&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+    </head>
+    <body>
+    <header class="masterheader">
+        <nav class="navbar navbar-expand navbar-light position-fixed w-100" id="navbar" style="z-index: 4;">
+            <div class="container-fluid pt-2 pb-2">
+              <a class="navbar-brand text-white ms-5" href="#">
+                <img src="img/bewerbungsbild_manuel.png" class="img-icon-avatar">
+                <span class="ms-2">Manuel DeStefani - Freelancer</span>
+              </a>
+              <ul class="navbar-nav  navbar-expand justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link text-white" href="#section-features">Leistungen</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#section-pros">Vorteile</a></li>
+                <li class="nav-item" hidden><a class="nav-link text-white" href="#">Portfolio</a></li>
+                <li class="nav-item" hidden><a class="nav-link text-white" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#section-aboutme">About</a></li>
+                <li class="nav-item ms-4"><a class="nav-link text-info" href="#section-contact">Termin Vereinbaren</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <nav class="navbar navbar-dark bg-dark position-fixed w-100" id="canvarNavbar" style="z-index: 4;">
+            <div class="container-fluid pt-2 pb-2">
+              <a class="navbar-brand text-white ms-5" href="#">
+                <img src="img/bewerbungsbild_manuel.png" class="img-icon-avatar">
+                <span class="ms-2">Manuel DeStefani - Freelancer</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end bg-dark ps-4" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header ms-auto">
+                  <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav bg-dark justify-content-end flex-grow-1 p-5">
+                    <li class="nav-item"><a class="nav-link text-white" href="#section-features">Leistungen</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#section-pros">Vorteile</a></li>
+                    <li class="nav-item" hidden><a class="nav-link text-white" href="#">Portfolio</a></li>
+                    <li class="nav-item" hidden><a class="nav-link text-white" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#section-aboutme">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-info" href="#section-contact">Termin Vereinbaren</a></li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+          </nav>
+          
+          <div class="container-fluid position-absolute top-50 start-50 translate-middle d-flex justify-content-center flex-column ms-lg-5" style="z-index: 2;">
+            <h5 class="text-sm-center text-lg-start fw-light fst-italic" style="color: #aab8c4;display: none;" id="welcomeTitle">Hallo, ich bin Manuel <span>&#128075;&#127996;</span></h5>
+            <div id="headerContent" style="display: none;">
+            <h1 class="text-sm-center text-lg-start text-white text-uppercase mt-1 mb-1 letter-spacing fw-bold font-family-oxanium">Freelance developer</h1>
+            <hr class= "text-white w-25 align-self-lg-start align-self-sm-center">
+            <h5 class="text-sm-center text-lg-start" style="color: #aab8c4;">
+              <p class="fw-light">Schluss mit Webseiten die keiner versteht.<br>
+                Bringen Sie Ihr Digitales Produkt auf ein neues Level, das Ihre Kunden begeistert.<br>
+                Ich helfe Ihnen dabei.
+              </p>
+          </h5>
+            <div class="justify-content-lg-start justify-content-sm-center d-flex flex-row">
+              <button type="button" class="btn btn-blue rounded-pill me-2" onClick="document.getElementById('section-contact').scrollIntoView();">Termin Vereinbaren</button>
+              <button type="button" class="btn btn-outline-blue rounded-pill text-info ms-2" onClick="document.getElementById('section-features').scrollIntoView();">Mehr Erfahren</button>
+            </div>
+          </div>
+        </div>
+        </header>
+
+
+        <section class="section-features bg-white pt-5 pb-5" id="section-features">
+          <div class="container p-5">
+
+            <h2 class="text-uppercase text-center text-secondary fs-6">Leistungen</h2>
+            <div class="row m-5">
+              <div class="col-md-12 col-lg-6 col-sm-12">
+                <h3 class="text-lg-start text-md-center text-sm-center text-uppercase font-family-nunito font-weight-bold">Entwicklung moderner Website</h3>
+                <h4 class="text-secondary text-lg-start text-md-center text-sm-center">Webdesign ist ein strategisches Investment</h4>
+                <p class="text-lg-start text-md-center text-sm-center text-body fs-5 pt-2">Steckt Ihr Business noch in den ersten Zügen und Sie benötigen eine Website? Oder besteht Ihre Firma bereits und Ihre Website könnte neuen Glanz vertragen? Ich helfe Ihnen, indem ich eine moderne & kreative Website entwerfe.</p>
+              </div>
+              <div class="col-md-12 col-lg-6 col-sm-12 d-flex justify-content-center mt-4 mb-4">
+                <img src="img/DeviceIllustriation.svg" class="img-responsive align-self-center" alt="Icons" loading="lazy" onload="$(this).fadeIn();">
+              </div>
+            </div>
+            <div class="row m-5">
+              <div class="col-md-12 col-lg-6 col-sm-12 d-flex justify-content-center mt-4 mb-4">
+                <img src="img/business.svg" class="img-responsive align-self-center" alt="Icons" loading="lazy">
+              </div>
+              <div class="col-md-12 col-lg-6 col-sm-12">
+                <h3 class="text-lg-start text-md-center text-sm-center text-uppercase font-family-nunito font-weight-bold">SEO Optimierung</h3>
+                <h4 class="text-secondary text-lg-start text-md-center text-sm-center">Auf Seite #1 bei Google stehen</h4>
+                <p class="text-lg-start text-md-center text-sm-center text-body fs-5 pt-2">Ein spitzen Google-Ranking bedeutet, dass mehr Menschen Ihren fantastischen Blogbeitrag oder Ihr revolutionäres Produkt sehen. Ich stelle sicher, dass Sie ein führendes Ranking mit besten SEO-Praktiken haben. Geben Sie Ihren Inhalten das Publikum, das sie verdienen!</p>
+              </div>
+            </div>
+            <div class="row m-5">
+              <div class="col-md-12 col-lg-6 col-sm-12">
+                <h3 class="text-lg-start text-md-center text-sm-center text-uppercase font-family-nunito font-weight-bold">Sicheres & Schnelles Back-end</h3>
+                <p class="text-lg-start text-md-center text-sm-center text-body fs-5 pt-2">Sie haben bereits ein Digitales Produkt und benötigen noch ein passendes Back-end? Ich entwickel Ihnen gerne ein sicheres & skallierbares Back-end. Oder helfe Ihnen bei der Erstellung & Verwaltung von Datenbank-Systemen.</p>
+              </div>
+              <div class="col-md-12 col-lg-6 col-sm-12 d-flex justify-content-center mt-4 mb-4">
+                <img src="img/server.svg" class="img-responsive align-self-center" alt="Icons" loading="lazy">
+              </div>
+            </div>
+            <div class="row m-5">
+              <div class="col-md-12 col-lg-6 col-sm-12 d-flex justify-content-center mt-4 mb-4">
+                <img src="img/support.svg" class="img-responsive align-self-center" alt="Icons" loading="lazy">
+              </div>
+              <div class="col-md-12 col-lg-6 col-sm-12">
+                <h3 class="text-lg-start text-md-center text-sm-center text-uppercase font-family-nunito font-weight-bold">Support der laufenden Projekte</h3>
+                <p class="text-lg-start text-md-center text-sm-center text-body fs-5 pt-2">Nach der Fertigstellung des Produkts ist noch lange nicht Schluss. Ich helfe Ihnen gerne bei der Einrichtung, Verwaltung oder auch Weiterentwicklung bestehender Projekte.</p>
+              </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="section-skills-tools bg-lightgray pt-5 pb-5">
+          <div class="container pt-5 pb-5">
+              <h2 class="text-uppercase text-center text-secondary fs-6">Skills & Tools</h2>
+
+
+              <div class="d-flex justify-content-center ms-auto me-auto mt-5 mb-5">
+                <div class="rounded-pill bg-gray" style="padding:4px;">
+                  <button class="btn btn-blue rounded-pill" type="button" id="techToggleButton">Tech</button>
+                  <button class="btn btn-blue rounded-pill btn-disabled" type="button" id="allgemeinToggleButton" >Allgemein</button>
+                </div>
+              </div>
+
+
+              <ul class="flex flex-row row flex-wrap justify-content-center" id="techCardList">
+                <li class="list-unstyled card-icon pb-2">
+                  <div class="card p-3">
+                    <img src="img/html.png" class="img-icon align-self-center" alt="Icons" loading="lazy">
+                    <p class="card-text pt-2 text-center">HTML5</p>
+                  </div>
+                </li>
+                <li class="list-unstyled card-icon pb-2">
+                  <div class="card p-3">
+                    <img src="img/css.png" class="img-icon align-self-center" alt="Icons" loading="lazy">
+                    <p class="card-text pt-2 text-center">CSS3</p>
+                  </div>
+                </li>
+                <li class="list-unstyled card-icon pb-2">
+                  <div class="card p-3">
+                    <img src="img/js.png" class="img-icon align-self-center" alt="Icons" loading="lazy">
+                    <p class="card-text pt-2 text-center">JavaScript</p>
+                  </div>
+                </li>
+                <li class="list-unstyled card-icon pb-2">
+                  <div class="card p-3">
+                    <img src="img/wordpress.png" class="img-icon align-self-center" alt="Icons" loading="lazy"> 
+                    <p class="card-text pt-2 text-center">WordPress</p>
+                  </div>
+                </li>
+                <li class="list-unstyled card-icon pb-2">
+                  <div class="card p-3">
+                    <img src="img/react.png" class="img-icon align-self-center" alt="Icons" loading="lazy">
+                    <p class="card-text pt-2 text-center">React</p>
+                  </div>
+                </li>
+                <li class="list-unstyled card-icon pb-2">
+                  <div class="card p-3">
+                    <img src="img/kotlin.png" class="img-icon align-self-center" alt="Icons" loading="lazy">
+                    <p class="card-text pt-2 text-center">Kotlin</p>
+                  </div>
+                </li>
+                <li class="list-unstyled card-icon pb-2">
+                  <div class="card p-3">
+                    <img src="img/java-3.png" class="img-icon align-self-center" alt="Icons" loading="lazy">
+                    <p class="card-text pt-2 text-center">Java</p>
+                  </div>
+                </li>
+                <li class="list-unstyled card-icon pb-2">
+                  <div class="card p-3">
+                    <img src="img/spring.png" class="img-icon align-self-center" alt="Icons" loading="lazy">
+                    <p class="card-text pt-2 text-center">Spring</p>
+                  </div>
+                </li>
+                <li class="list-unstyled card-icon pb-2">
+                  <div class="card p-3">
+                    <img src="img/mysql-2.png" class="img-icon align-self-center" alt="Icons" loading="lazy">
+                    <p class="card-text pt-2 text-center">MySQL</p>
+                  </div>
+                </li>
+                <li class="list-unstyled card-icon pb-2">
+                  <div class="card p-3">
+                    <img src="img/postgresql.png" class="img-icon align-self-center" alt="Icons" loading="lazy">
+                    <p class="card-text pt-2 text-center">PostgreSQL</p>
+                  </div>
+                </li>
+                <li class="list-unstyled card-icon pb-2">
+                  <div class="card p-3">
+                    <img src="img/php.png" class="img-icon align-self-center" alt="Icons" loading="lazy">
+                    <p class="card-text pt-2 text-center">PHP</p>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="lex flex-row row flex-wrap justify-content-center" id="allgemeinCardList">
+                <li class="list-unstyled card-icon pb-2">
+                  <div class="card p-3">
+                    <img src="img/git.png" class="img-icon align-self-center" alt="Icons" loading="lazy"> 
+                    <p class="card-text pt-2 text-center">Git</p>
+                  </div>
+                </li>
+                <li class="list-unstyled card-icon pb-2">
+                  <div class="card p-3">
+                    <img src="img/github.png" class="img-icon align-self-center" alt="Icons" loading="lazy">
+                    <p class="card-text pt-2 text-center">GitHub</p>
+                  </div>
+                </li>
+                <li class="list-unstyled card-icon pb-2">
+                  <div class="card p-3">
+                    <img src="img/gradle.png" class="img-icon align-self-center" alt="Icons" loading="lazy">
+                    <p class="card-text pt-2 text-center">Gradle</p>
+                  </div>
+                </li>
+                <li class="list-unstyled card-icon pb-2">
+                  <div class="card p-3">
+                    <img src="img/figma.png" class="img-icon align-self-center" alt="Icons" loading="lazy">
+                    <p class="card-text pt-2 text-center">Figma</p>
+                  </div>
+                </li>
+                <li class="list-unstyled card-icon pb-2">
+                  <div class="card p-3">
+                    <img src="img/vscode.png" class="img-icon align-self-center" alt="Icons" loading="lazy">
+                    <p class="card-text pt-2 text-center">VSCode</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </section>
+
+
+        <section class="section-pros bg-white pt-5 pb-5" id="section-pros">
+          <div class="container p-5">
+
+            <h2 class="text-uppercase text-center text-secondary fs-6">Vorteile</h2>
+            <div class="row m-5">
+
+              <div class="col-lg-3 col-sm-12 mt-4 mb-4">
+                <img src="img/time.png" onmouseover="this.src='img/time.gif'" onmouseout="this.src='img/time.png'" class="img-lg-icon ms-auto me-auto d-block mb-" alt="Icons" loading="lazy">
+                <p class="text-center font-weight-bold font-family-nunito fs-5"><span><br>Spare Zeit</span></p>
+                <p class="text-center fs-5"><span>Mehr Zeit sich auf Ihr Business zu konzentrieren.</span></p>
+              </div>
+
+              <div class="col-lg-3 col-sm-12 mt-4 mb-4">
+                <img src="img/work.png" onmouseover="this.src='img/working.gif'" onmouseout="this.src='img/work.png'" class="img-lg-icon ms-auto me-auto d-block mb-" alt="Icons" loading="lazy">
+                <p class="text-center font-weight-bold font-family-nunito fs-5"><span>24/7<br> Funktionierendes Produkt</span></p>
+                <p class="text-center fs-5"><span>Ausgiebige Planung & individuelle Anpassung an Ihre Wünsche.</span></p>
+              </div>
+
+              <div class="col-lg-3 col-sm-12 mt-4 mb-4">
+                <img src="img/smiley.png" onmouseover="this.src='img/smily.gif'" onmouseout="this.src='img/smiley.png'" class="img-lg-icon ms-auto me-auto d-block mb-" alt="Icons" loading="lazy">
+                <p class="text-center font-weight-bold font-family-nunito fs-5"><span><br>Zufriedene Kunden</span></p>
+                <p class="text-center fs-5"><span>Gewinnen Sie Kunden, die Wert auf Qualität legen.</span></p>
+              </div>
+
+            <div class="col-lg-3 col-sm-12 mt-4 mb-4">
+              <img src="img/analyse.png" onmouseover="this.src='img/analyse.gif'" onmouseout="this.src='img/analyse.png'" class="img-lg-icon ms-auto me-auto d-block mb-" alt="Icons" loading="lazy">
+              <p class="text-center font-weight-bold font-family-nunito fs-5"><span><br>Höhere Umsätze</span></p>
+              <p class="text-center fs-5"><span>Erkennen Sie die Chancen und setzen sie zielgerichtet um!</span></p>
+            </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="section-promise bg-lightgray pt-5 pb-5">
+          <div class="container p-5">
+
+            <h2 class="text-uppercase text-center text-secondary fs-6">Versprechen</h2>
+            <div class="row m-5">
+              <div class="col-lg-6 col-sm-12">
+                <img src="img/dev.svg" class="img-lg ms-auto me-auto d-block" alt="Icons" loading="lazy">
+                <p class="text-center font-weight-bold font-family-nunito fs-5"><span>Modernes Produkt mit exzeletter Qualität</span></p>
+                <p class="text-center fs-5"><span>Meine Leidenschaft fürs Coden sorgt für Exzellenz in Ihrem Endprodukt.</span></p>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <img src="img/healthy.svg" class="img-lg ms-auto me-auto d-block" alt="Icons" loading="lazy">
+                <p class="text-center font-weight-bold font-family-nunito fs-5"><span>Eine gesunde Beziehung</span></p>
+                <p class="text-center fs-5"><span>Kommunikation ist der Schlüssel in jeder Beziehung, einschließlich unserer.</span></p>
+              </div>
+          </div>
+        </div>
+        </section>
+
+        <section class="section-pros bg-white pt-5 pb-5">
+          <div class="container ps-5 pe-5 pt-5 pb-5">
+
+            <h2 class="text-uppercase text-center text-secondary fs-6">Fragen</h2>
+            <div class="mt-5">
+              <div class="card w-75 ms-auto me-auto mt-5 shadow">
+                <div class="card-header bg-secondary p-4">
+                  <button class="btn-decoration-none w-100 h-100 text-white text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                    <i class="fa fa-chevron-down pull-right"></i>
+                    Wie oft bleiben wir im Kontakt?
+                  </button>
+              </div>
+              <div class="collapse" id="collapseExample1">
+                <div class="card card-body">
+                  Ich habe versprochen, eine gesunde Beziehung zu Ihnen zu pflegen. Ganz egal ob es ein Anruf am Tag oder eine E-Mail die Woche benötigt. Denken Sie daran, dass ich hier bin, um Ihnen das Leben einfacher und nicht komplizierter zu machen.
+                </div>
+              </div>
+            </div>
+              <div class="card w-75 ms-auto me-auto mt-5 shadow">
+                <div class="card-header bg-secondary p-4">
+                  <button class="btn-decoration-none w-100 h-100 text-white text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                    <i class="fa fa-chevron-down pull-right"></i>
+                   Was ist, wenn mir das Endprodukt nicht gefällt?
+                  </button>
+              </div>
+              <div class="collapse" id="collapseExample2">
+                <div class="card card-body">
+                  Ihr Produkt wird im Vorfeld genau geplant & nach Ihren Wünschen gestaltet. Falls sich wärent der Entwicklung Änderungen ergeben, ist dies selbstverständlich kein Problem. Deswegen ist eine gute Kommunikation das A&O.<br>Die Entwicklung des Produkts wird erst abgeschlossen, wenn sie zu 100% zufrieden sind.
+                </div>
+              </div>
+            </div>
+
+            <div class="card w-75 ms-auto me-auto mt-5 shadow">
+              <div class="card-header bg-secondary p-4">
+                <button class="btn-decoration-none w-100 h-100 text-white text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                  <i class="fa fa-chevron-down pull-right"></i>
+                 Abrechnung pro Stundensatz oder pro Produkt?
+                </button>
+            </div>
+            <div class="collapse" id="collapseExample3">
+              <div class="card card-body">
+               Es wird pro Digitales Produkt abgerechnet. So muss ich mir keine Gedanken um die Preiskalkulation bzw. das Stunden zählen machen, sonder kann mich voll und ganz auf Ihr Projekt konzentrieren.
+              </div>
+            </div>
+          </div>
+
+          <div class="card w-75 ms-auto me-auto mt-5 shadow">
+            <div class="card-header bg-secondary p-4">
+              <button class="btn-decoration-none w-100 h-100 text-white text-start"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                <i class="fa fa-chevron-down pull-right"></i>
+               Ihre Frage wurde nicht beantwortet?
+              </button>
+          </div>
+          <div class="collapse" id="collapseExample4">
+            <div class="card card-body">
+             Gerne besprechen wir noch offene Fragen bzw. Ihre Projekt Idee bei einem unverbindlichen Kennenlerngespräch.
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+        </div>
+        </section>
+
+        <section class="section-aboutme bg-lightgray pt-5" id="section-aboutme">
+            <div class="container p-5">
+              <h2 class="text-uppercase text-center text-secondary fs-6">Über mich</h2>
+              <div class="row ms-5 me-5 mt-5">
+
+                <div class="col-lg-4 col-sm-12 d-flex justify-content-center mb-4">
+                  <img src="img/bewerbungsbild_manuel.png" alt="Avatar" class="img-icon-lg-avatar border-primary" loading="lazy">
+                </div>
+                
+                <div class="col-lg-8 col-sm-12">
+        
+                  <p class="mt-4 text-lg-start text-sm-center">Mit guten Ideen, einem Auge fürs Detail und entwicklungstechnischem Wissen stehe ich Ihnen von der Konzeption bis zur finalen Umsetzung zur Seite und helfe Ihnen, Ihre Vision Realität werden zu lassen. Ihre Arbeit, Ihr Produkt ist wertvoll und einzigartig. Lassen Sie uns gemeinsam dafür sorgen, dass man dies bereits auf den ersten Blick erkennt.</p>
+                  <h2 class="text-lg-start text-sm-center font-family-nunito font-weight-bold">Manuel DeStefani</h2>
+                  <p class="text-lg-start text-sm-center font-family-nunito fw-light fst-italic">Full-Stack Developer</p>
+                </div>
+
+              </div>
+        </section>
+
+        <section class="section-contact bg-secondary shadow" id="section-contact">
+          <div class="container ps-5 pe-5 pb-5 pt-5">
+
+            <h1 class="m-4 font-family-nunito font-weight-bold text-uppercase text-center text-white">SIE HABEN EINE IDEE?​​</h1>
+            <p class="fst-italic text-center text-white"> Ich freue mich mehr über Ihr Projekt zu erfahren!</p>
+  
+            <form class="w-50 me-auto ms-auto pt-4" hidden>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="nameTextInput" placeholder="Name">
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" id="messageTextArea" rows="3" placeholder="Ihre Nachricht ..."></textarea>
+              </div>
+              <div class="mb-3">
+                <button type="button" class="btn btn-blue text-uppercase w-50" onclick="mailTo();">Los Geht´s</button>
+
+              </div>
+            </form>
+
+            <form class="w-50 me-auto ms-auto pt-4">
+              <div class="mb-3">
+                <button type="button" class="btn btn-blue text-uppercase w-100">Coming Soon</button>
+              </div>
+            </form>
+        </div>
+        </section>
+
+        <footer class="footer bg-dark"> 
+          <div class="container w-50 ms-auto me-auto">
+            <div class="d-flex flex-row justify-content-around">
+              <ul title="Social Links" class="list-unstyled text-white">
+                <lh>Social Links</lh>
+                  <li><a href="#" class="text-secondary text-decoration-none">Facebook</a></li>
+                  <li><a href="#" class="text-secondary text-decoration-none">Instagram</a></li>
+                  <li><a href="#" class="text-secondary text-decoration-none">LinkedIn</a></li>
+                  <li><a href="#" class="text-secondary text-decoration-none">Xing</a></li>
+              </ul>
+              <ul title="Quick Links" class="list-unstyled text-white">
+                <lh>Quick Links</lh>
+                  <li><a href="#" class="text-secondary text-decoration-none">Blog</a></li>
+                  <li><a href="#" class="text-secondary text-decoration-none">Datenschutz</a></li>
+                  <li><a href="#" class="text-secondary text-decoration-none">Impressum</a></li>
+              </ul>
+          </div>
+            <div class="d-flex flex-row text-white justify-content-center text-uppercase pt-5">
+              <p>Copyright @ 2021 By DeStefani</p>
+            </div>
+        </div>
+        </footer>
+      
+        <script type="text/javascript" src="js/jsscript.js"></script>
+      </body>
+</html>  
